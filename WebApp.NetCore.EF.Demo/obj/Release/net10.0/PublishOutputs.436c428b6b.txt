@@ -1,0 +1,7 @@
+D:\GitProjects\Azure.NetCore.Learning\WebApp.NetCore.EF.Demo\published\WebApp.NetCore.EF.Demo.exe
+D:\GitProjects\Azure.NetCore.Learning\WebApp.NetCore.EF.Demo\published\appsettings.Development.json
+D:\GitProjects\Azure.NetCore.Learning\WebApp.NetCore.EF.Demo\published\appsettings.json
+D:\GitProjects\Azure.NetCore.Learning\WebApp.NetCore.EF.Demo\published\WebApp.NetCore.EF.Demo.dll
+D:\GitProjects\Azure.NetCore.Learning\WebApp.NetCore.EF.Demo\published\WebApp.NetCore.EF.Demo.deps.json
+D:\GitProjects\Azure.NetCore.Learning\WebApp.NetCore.EF.Demo\published\WebApp.NetCore.EF.Demo.runtimeconfig.json
+D:\GitProjects\Azure.NetCore.Learning\WebApp.NetCore.EF.Demo\published\WebApp.NetCore.EF.Demo.pdb
