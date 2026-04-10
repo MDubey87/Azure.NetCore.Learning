@@ -2,6 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>D:\GitProjects\Azure.NetCore.Learning\.github\workflows\az-manish-web-app.yml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\GitProjects\Azure.NetCore.Learning\.github\workflows\main_az-manish-web-app.yml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
