@@ -1,0 +1,53 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject IEngineerService engineerService
+@if (engineers == null)
+{
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+    </div>
+}
+else
+{
+    <a href=@($"upsert") class="btn btn-primary"><span class="bi bi-plus" /> Add Engineer</a>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>Speciality</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var engineer in engineers)
+                {
+                    <tr>
+                        <td>@engineer.Name</td>
+                        <td>@engineer.Country</td>
+                        <td>@engineer.Speciality</td>
+                        <td>
+                            <a href=@($"upsert/{engineer.id}") class="btn btn-primary"><span class="bi bi-pencil" />Edit</a>
+                            <button type="button" class=" btn btn-danger" @onclick="async () => await DeleteEngineer(engineer.id)">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    private List<Engineer> engineers = new();
+    protected override async Task OnInitializedAsync()
+    {
+        engineers = await engineerService.GetEngineers();
+    }
+    private async Task DeleteEngineer(Guid? id)
+    {
+        var engineerId = id?.ToString() ?? string.Empty;
+        await engineerService.DeleteEngineer(engineerId, engineerId);
+        engineers = await engineerService.GetEngineers();
+    }
+}

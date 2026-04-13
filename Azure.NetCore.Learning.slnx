@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="Blazor.CosmosDB.Demo/Blazor.CosmosDB.Demo.csproj" Id="87856d1c-eab7-47e3-90cc-8bd4cad5ff87" />
   <Project Path="WebApp.NetCore.EF.Demo/WebApp.NetCore.EF.Demo.csproj" Id="60d423ed-eb40-4f2a-8a8c-4365196b624e" />
 </Solution>

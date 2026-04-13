@@ -1,0 +1,46 @@
+﻿@page "/upsert"
+@page "/upsert/{id:guid}"
+@rendermode InteractiveServer
+@inject IEngineerService engineerService
+@inject NavigationManager navigationManager
+<h3>Upser Engineer</h3>
+<EditForm Model="@engineer" FormName="engineerForm">
+    <div class="form-group row p-2">
+        <input type="hidden" @bind-value="engineer.id" />
+        <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Name" @bind-value="engineer.Name" />
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Country" @bind-value="engineer.Country" />
+        </div>
+        
+    </div>
+    <div class="form-group row p-2">
+        <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Speciality" @bind-value="engineer.Speciality" />
+        </div>
+    </div>
+    <div class="form-group row p-2">
+        <div class="text-center">
+            <button type="button" class=" btn btn-primary" @onclick="async () => await SaveEngineer()">Save</button>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    Engineer engineer = new();
+    [Parameter]
+    public Guid? id { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        if (id.HasValue && id.Value != Guid.Empty)
+        {
+            engineer = await engineerService.GetEngineerById(id.Value.ToString(), id.Value.ToString());
+        }
+    }
+    private async Task SaveEngineer()
+    {
+        await engineerService.UsertEngineer(engineer);
+        navigationManager.NavigateTo("/");
+    }
+}
