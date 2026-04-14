@@ -5,3 +5,5 @@
 /.vs/Azure.NetCore.Learning.slnx
 /WebApp.NetCore.EF.Demo/bin/Debug/net10.0
 /WebApp.NetCore.EF.Demo/bin/Release/net10.0
+/Console.QueueConsumer.Demo/bin/Debug/net10.0
+/Mvc.AzureStorage.Demo/bin/Debug/net10.0
