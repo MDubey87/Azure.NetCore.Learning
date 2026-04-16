@@ -7,3 +7,7 @@
 /WebApp.NetCore.EF.Demo/bin/Release/net10.0
 /Console.QueueConsumer.Demo/bin/Debug/net10.0
 /Mvc.AzureStorage.Demo/bin/Debug/net10.0
+/Console.ServiceBus.Receiver.Demo/bin/Debug/net10.0
+/Console.ServiceBus.Receiver.Topic.Demo/bin/Debug/net10.0
+/Console.ServiceBus.Sender.Demo/bin/Debug/net10.0
+/Console.ServiceBus.Sender.Topic.Demo/bin/Debug/net10.0

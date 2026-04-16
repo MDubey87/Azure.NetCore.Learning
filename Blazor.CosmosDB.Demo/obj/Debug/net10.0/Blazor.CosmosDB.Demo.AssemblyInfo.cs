@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Blazor.CosmosDB.Demo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0ff62911dbd88e847b095d7228d044e390d7238")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0abebaab8ab8c3ad6d6a1e40fc81a144a5252159")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blazor.CosmosDB.Demo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blazor.CosmosDB.Demo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

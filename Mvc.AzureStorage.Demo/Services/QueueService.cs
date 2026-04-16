@@ -1,7 +1,6 @@
 ﻿using Azure.Storage.Queues;
 using Mvc.AzureStorage.Demo.Models;
 using Newtonsoft.Json;
-using System.Net.Mail;
 
 namespace Mvc.AzureStorage.Demo.Services
 {
